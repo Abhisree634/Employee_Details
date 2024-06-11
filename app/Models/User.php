@@ -21,8 +21,13 @@ class User extends Authenticatable
     //  public function getDateOFDonation($value){
     //     retrun date('d-M-Y',strtotime($value)); 
     //  }
-    protected $guarded = [];
-    
+    protected $fillable = [
+        'name',
+        'email',
+        'city',
+        'mobile',
+        'password',
+    ];
        
     /**
      * The attributes that should be hidden for serialization.

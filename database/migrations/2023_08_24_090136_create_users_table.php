@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('donor_name');
-            $table->string('email');
-            $table->text('blood_group');
-            $table->date('date_of_donation');
-            $table->integer('quantity');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('city'); // changed from text to string
+            $table->string('mobile'); // changed from text to string
+            $table->string('password');
             $table->timestamps();
         });
     }

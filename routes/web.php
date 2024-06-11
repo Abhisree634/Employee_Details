@@ -14,10 +14,7 @@ use Illuminate\Support\Facades\Route;
 */ 
 
 Route::get('/','firstpageController@Firstpage')->name('Firstpage');
-Route::get('public','PublicController@public')->name('Public.user');
 Route::get('home','FrontEndController@homepage')->name('home');
-Route::get('login','LoginController@login')->name('login');
-Route::post('do-Login','LoginController@dologin')->name('do.login');
 
 Route::get('create-user','FrontEndController@create')->name('create.user');
 Route::post('save','FrontEndController@save')->name('save.user');
